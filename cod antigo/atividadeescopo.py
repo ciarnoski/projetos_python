@@ -13,4 +13,4 @@ def exemplo():
 
 print(x) #o resultado dará 10, pois esse print() não está tabulado dentro do def
 exemplo() #aqui é usado para chamar a função def
-print(y) #não há como chamar uma varíavel local dessa forma, pois ela está apenas dentro da função def
+#print(y) não há como chamar uma varíavel local dessa forma, pois ela está apenas dentro da função def
