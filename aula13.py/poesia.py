@@ -17,4 +17,3 @@ while True:
         arquivos = open('aula13.py/frases.txt','w')
     arquivos.write(f'{poeta}\n')
     arquivos.close()
-
