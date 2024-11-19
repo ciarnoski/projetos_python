@@ -1,0 +1,53 @@
+CREATE TABLE gatos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    idade INT,
+    cor VARCHAR(100) UNIQUE
+);
+
+
+INSERT INTO gatos (nome, idade,cor) VALUES ('maria', '10', 'azul');
+
+UPDATE usuarios
+SET nome = novo_valor
+WHERE condicao;
+
+DELETE FROM usuarios
+WHERE email = 'pedro@example.com';
+
+
+CREATE TABLE empresa (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE
+);
+
+CREATE TABLE alugueis(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    modelo VARCHAR(100) NOT NULL,
+    data_inicial VARCHAR(100) NOT NULL,
+    data_final VARCHAR(100) NOT NULL
+);
+
+INSERT INTO empresa (id, nome, email) VALUES 
+('1','Grupo G', 'g-group@gmail,com'),
+('2', 'Senac', 'pedag_senac@senac.rs'),
+('3','Oppar','op_exec@oppar.org'),
+('4','GNC','gnc@cng.org'),
+('5','Half Ligas','half_ligas@gmail.com');
+
+
+INSERT INTO alugueis(modelo, data_inicial, data_final) VALUES
+('Toyota Corolla','12/07/24','19/08/24'),
+('Toyota Corolla','04/05/24','12/07/24'),
+('Ford Mustang','08/04/24','04/05/24'),
+('Volkswagen Gol','**************','**************'),
+('Tesla Model 3','**************','**************'),
+('Toyota Corolla','**************','**************'),
+('Toyota Corolla','**************','**************'),
+('Ford Mustang','**************','**************');
+
+SELECT alugueis.modelo, alugueis.data_inicial, alugueis.data_final, 
+       empresa.nome AS nome_da_empresa, empresa.email AS email_da_empresa
+FROM alugueis
+INNER JOIN empresa ON alugueis.id_da_empresa = empresas.id;

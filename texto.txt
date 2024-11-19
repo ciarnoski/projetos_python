@@ -1,3 +1,0 @@
-nome: angelo
-email: aciarnoski
-telefone: 345345634

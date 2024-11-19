@@ -1,3 +1,0 @@
-nome: angelo
-telefone: 4547567
-email: aciarnoski

@@ -1,2 +1,0 @@
-Aluno: Angelo, Notas: [5.0, 5.0, 5.0], Média: 5.00
-Aluno: Joa, Notas: [5.0], Média: 5.00
